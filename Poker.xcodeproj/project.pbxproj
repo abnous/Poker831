@@ -15,6 +15,8 @@
 		CEA723E52C087AE9002821B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA723E42C087AE9002821B7 /* Assets.xcassets */; };
 		CEA723E82C087AE9002821B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA723E72C087AE9002821B7 /* Preview Assets.xcassets */; };
 		CEA723F32C087AE9002821B7 /* PokerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA723F22C087AE9002821B7 /* PokerTests.swift */; };
+		CEA724012C08C35F002821B7 /* pokertable.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CEA724002C08C35F002821B7 /* pokertable.usdz */; };
+		CEA724022C08C35F002821B7 /* pokertable.usdz in Resources */ = {isa = PBXBuildFile; fileRef = CEA724002C08C35F002821B7 /* pokertable.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,7 @@
 		CEA723E92C087AE9002821B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA723EE2C087AE9002821B7 /* PokerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA723F22C087AE9002821B7 /* PokerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerTests.swift; sourceTree = "<group>"; };
+		CEA724002C08C35F002821B7 /* pokertable.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = pokertable.usdz; path = ../../../Downloads/pokertable.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 				CEA723E02C087AE8002821B7 /* ImmersiveView.swift */,
 				CEA723E22C087AE8002821B7 /* ImageBasedLighting.skybox */,
 				CEA723E42C087AE9002821B7 /* Assets.xcassets */,
+				CEA724002C08C35F002821B7 /* pokertable.usdz */,
 				CEA723E92C087AE9002821B7 /* Info.plist */,
 				CEA723E62C087AE9002821B7 /* Preview Content */,
 			);
@@ -201,6 +205,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA724012C08C35F002821B7 /* pokertable.usdz in Resources */,
 				CEA723E52C087AE9002821B7 /* Assets.xcassets in Resources */,
 				CEA723E82C087AE9002821B7 /* Preview Assets.xcassets in Resources */,
 				CEA723E32C087AE8002821B7 /* ImageBasedLighting.skybox in Resources */,
@@ -211,6 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA724022C08C35F002821B7 /* pokertable.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
