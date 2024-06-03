@@ -18,14 +18,13 @@ struct ImmersiveView: View {
     }()
     
     @State var wallEntity: Entity = {
-        let tableAnchor = AnchorEntity( .plane(.vertical, classification: .wall,
+        let wallAnchor = AnchorEntity( .plane(.vertical, classification: .wall,
             minimumBounds: SIMD2<Float>(0.6,0.6)))
         let planeMesh = MeshResource.generatePlane(width: 3.75, depth: 2.625, cornerRadius: 0.1)
-        let material = SimpleMaterial(color: .green, isMetallic: false)
+        let material = SimpleMaterial(color: .red, isMetallic: false)
         let wallEntity = ModelEntity(mesh: planeMesh, materials: [material])
-        wallEntity.name = "canvas"
-        tableAnchor.addChild(wallEntity)
-        return tableAnchor
+        wallAnchor.addChild(wallEntity)
+        return wallAnchor
                                                    
     }()
     
