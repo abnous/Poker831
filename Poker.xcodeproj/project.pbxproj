@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE5AC5ED2C0D78A4007E9B19 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5AC5EC2C0D78A4007E9B19 /* ViewModel.swift */; };
+		CE5AC5F02C0D80EB007E9B19 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = CE5AC5EF2C0D80EB007E9B19 /* RealityKitContent */; };
 		CEA723DB2C087AE8002821B7 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = CEA723DA2C087AE8002821B7 /* RealityKitContent */; };
 		CEA723DD2C087AE8002821B7 /* PokerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA723DC2C087AE8002821B7 /* PokerApp.swift */; };
 		CEA723DF2C087AE8002821B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA723DE2C087AE8002821B7 /* ContentView.swift */; };
@@ -30,8 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE5AC5EC2C0D78A4007E9B19 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		CEA723D52C087AE8002821B7 /* Poker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEA723D92C087AE8002821B7 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		CEA723DC2C087AE8002821B7 /* PokerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerApp.swift; sourceTree = "<group>"; };
 		CEA723DE2C087AE8002821B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEA723E02C087AE8002821B7 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5AC5F02C0D80EB007E9B19 /* RealityKitContent in Frameworks */,
 				CEA723DB2C087AE8002821B7 /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				CEA723D72C087AE8002821B7 /* Poker */,
-				CEA723D82C087AE8002821B7 /* Packages */,
 				CEA723F12C087AE9002821B7 /* PokerTests */,
 				CEA723D62C087AE8002821B7 /* Products */,
 			);
@@ -85,6 +87,7 @@
 		CEA723D72C087AE8002821B7 /* Poker */ = {
 			isa = PBXGroup;
 			children = (
+				CE5AC5EC2C0D78A4007E9B19 /* ViewModel.swift */,
 				CEA723DC2C087AE8002821B7 /* PokerApp.swift */,
 				CEA723DE2C087AE8002821B7 /* ContentView.swift */,
 				CEA723E02C087AE8002821B7 /* ImmersiveView.swift */,
@@ -95,14 +98,6 @@
 				CEA723E62C087AE9002821B7 /* Preview Content */,
 			);
 			path = Poker;
-			sourceTree = "<group>";
-		};
-		CEA723D82C087AE8002821B7 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-				CEA723D92C087AE8002821B7 /* RealityKitContent */,
-			);
-			path = Packages;
 			sourceTree = "<group>";
 		};
 		CEA723E62C087AE9002821B7 /* Preview Content */ = {
@@ -139,6 +134,7 @@
 			name = Poker;
 			packageProductDependencies = (
 				CEA723DA2C087AE8002821B7 /* RealityKitContent */,
+				CE5AC5EF2C0D80EB007E9B19 /* RealityKitContent */,
 			);
 			productName = Poker;
 			productReference = CEA723D52C087AE8002821B7 /* Poker.app */;
@@ -190,6 +186,9 @@
 				Base,
 			);
 			mainGroup = CEA723CC2C087AE8002821B7;
+			packageReferences = (
+				CE5AC5EE2C0D80EB007E9B19 /* XCLocalSwiftPackageReference "../../Downloads/GenerativeDoodleArt_VisionOS-main/Packages/RealityKitContent" */,
+			);
 			productRefGroup = CEA723D62C087AE8002821B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -229,6 +228,7 @@
 			files = (
 				CEA723DF2C087AE8002821B7 /* ContentView.swift in Sources */,
 				CEA723DD2C087AE8002821B7 /* PokerApp.swift in Sources */,
+				CE5AC5ED2C0D78A4007E9B19 /* ViewModel.swift in Sources */,
 				CEA723E12C087AE8002821B7 /* ImmersiveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +307,8 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
+				NEW_SETTING1 = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = xros;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -364,6 +366,8 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
+				NEW_SETTING1 = "";
 				SDKROOT = xros;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
@@ -497,7 +501,18 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		CE5AC5EE2C0D80EB007E9B19 /* XCLocalSwiftPackageReference "../../Downloads/GenerativeDoodleArt_VisionOS-main/Packages/RealityKitContent" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../Downloads/GenerativeDoodleArt_VisionOS-main/Packages/RealityKitContent";
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		CE5AC5EF2C0D80EB007E9B19 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
 		CEA723DA2C087AE8002821B7 /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;
